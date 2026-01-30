@@ -1,0 +1,35 @@
+{
+  "name": "authentication_and_authorization",
+  "version": "1.0.0",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "npm run clean && concurrently \"tsc --watch\" \"nodemon --delay 2 dist/server.js\"",
+    "dev:ts-node": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "npm run clean && tsc",
+    "build:watch": "tsc --watch",
+    "start": "node dist/server.js",
+    "clean": "rimraf dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.2.3",
+    "express": "^4.22.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.1.5",
+    "winston": "^3.19.0",
+    "winston-daily-rotate-file": "^5.0.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cookie-parser": "^1.4.10",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "concurrently": "^9.2.1"
+  }
+}

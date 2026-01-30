@@ -1,2 +1,2 @@
 export { default as ServerConfig } from "./ServerConfig";
-export { connectToDB as DB_Connection } from "./db";
+export { connectToDB } from "./db";

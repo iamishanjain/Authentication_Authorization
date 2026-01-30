@@ -1,4 +1,5 @@
 import { createLogger, transports, format, addColors } from "winston";
+import { DailyRotateFileTransportOptions } from "winston-daily-rotate-file";
 import { DailyRotateFile } from "winston/lib/winston/transports";
 import path from "path";
 

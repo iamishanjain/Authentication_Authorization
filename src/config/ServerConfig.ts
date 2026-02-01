@@ -35,6 +35,7 @@ class ServerConfig {
       : undefined,
     USER: process.env.SMTP_USER,
     PASS: process.env.SMTP_PASS,
+    EMAIL_FROM: process.env.EMAIL_FROM,
   };
 
   public EMAIL = {
